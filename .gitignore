@@ -1,0 +1,49 @@
+# Node modules (both frontend and backend)
+node_modules/
+
+# Build and dist folders
+dist/
+build/
+.next/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Cache
+.cache/
+.tmp/
+
+# Dependency locks (optional: keep if you want reproducible builds)
+# package-lock.json
+# yarn.lock
+
+# Local server configs
+*.pid
+*.seed
+*.pid.lock
+
+# Testing outputs
+test-output/
