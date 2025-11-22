@@ -51,7 +51,7 @@ export const verifyOtp = async (req, res) => {
 
     if(!email || !otp) return res.status(400).json({message:"Invalid request.", success:false});
 
-    const user = await User.findOne({email});
+    let user = await User.findOne({email});
 
     if(!user) return res.status(400).json({message:"Email not found.", success:false});
 
@@ -66,10 +66,10 @@ export const verifyOtp = async (req, res) => {
     user.verificationExpiry = undefined;
 
     await user.save();
-
+    user = await User.findById(user._id).select("-password -verified -verificationCode -verificationExpiry")
     createToken(user._id, res);
 
-    return res.status(200).json({message:"Email verified.", success:true});
+    return res.status(200).json(user);
 
   } catch (error) {
     console.log('Error in verifyOtp :: ', error);

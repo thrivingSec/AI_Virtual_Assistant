@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bg from "../assets/originalAuth.png";
+import bg from "../assets/AuthImage.png";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";

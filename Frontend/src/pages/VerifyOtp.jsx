@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
-import bg from "../assets/originalAuth.png";
-import { useSelector } from "react-redux";
+import bg from "../assets/AuthImage.png";
+import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { serverURL } from "../main";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { setUser } from "../redux/userSlice";
 
 const VerifyOtp = () => {
   const { verificationEmail } = useSelector((store) => store.verificationEmail);
+  const dispatch = useDispatch();
   const [timer, setTimer] = useState(120);
   const navigate = useNavigate();
   useEffect(() => {
@@ -31,7 +33,8 @@ const VerifyOtp = () => {
           { email: verificationEmail, otp },
           { withCredentials: true }
         );
-        if (response.data.success === true) {
+        if (response.data._id) {
+          dispatch(setUser(response.data));
           navigate("/customize/image");
         }
       } else {
