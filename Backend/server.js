@@ -13,7 +13,7 @@ const app = express();
 
 // cors config
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://ai-virtual-assistant-t36d.onrender.com",
   credentials:true
 }))
 
