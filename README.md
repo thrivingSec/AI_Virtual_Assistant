@@ -7,6 +7,8 @@ Designed with production-grade engineering practices, it demonstrates mastery in
 authentication flows, contextual AI systems, real-time voice and action
 handling, and scalable backend architecture.
 
+![Landing Page](./Screenshots/LandingPage.png)
+
 <h2>🧠 Table of Contents</h2>
 <ul>
   <li>Overview</li>
@@ -61,8 +63,8 @@ assistant experience.
 <h2>💡 Features</h2>
 <h3>🔐 User Authentication & Authorization</h3>
 <ul>
-  <li>Production-grade signup/login system secured by JWT</li>
-  <li>Time-bound email OTP verification</li>
+  <li>Production-grade signup/login system secured by JWT ><img src="./Screenshots/SignupPage.png" alt="Signup Page" width="800"><br/> </li>
+  <li>Time-bound email OTP verification<img src="./Screenshots/VerifyOtpPage.png" alt="Signup Page" width="800"><br/></li>
   <li>Complete error handling for nearly every edge case</li>
   <li>
     Protected routes to ensure only authorized users access critical pages
@@ -70,8 +72,8 @@ assistant experience.
 </ul>
 <h3>🧑‍🏫 Customizable User Assistant</h3>
 <ul>
-  <li>Set assistant name</li>
-  <li>Upload or select assistant image (Cloudinary-integrated)</li>
+  <li>Upload or select assistant image (Cloudinary-integrated)<img src="./Screenshots/CustomizeAssistantImagePage.png" alt="Signup Page" width="800"></li>
+  <li>Set assistant name <br/> <img src="./Screenshots/CustomizeAssistantNamePage.png" alt="Signup Page" width="800"><br/></li>
 </ul>
 <h3>🧠 AI Intelligence Layer</h3>
 <ul>
@@ -80,7 +82,7 @@ assistant experience.
 </ul>
 <h3>🎙️ Voice-Based Agent Activation</h3>
 <ul>
-  <li>Hands-free voice trigger to activate the assistant(required only once in the begining)</li>
+  <li>Hands-free voice trigger to activate the assistant(action required only once in the begining)<img src="./Screenshots/AssistantPage.png" alt="Signup Page" width="800"><br/></li>
   <li>
     Supports small action tasks such as:
     <ul>
@@ -89,7 +91,7 @@ assistant experience.
       <li>Social media navigation</li>
     </ul>
   </li>
-  <li>Handles general query conversations through voice</li>
+  <li>Handles general query conversations through voice<img src="./Screenshots/AssistantInAction.png" alt="Signup Page" width="800"><br/></li>
 </ul>
 <h3>📱 Responsive UI</h3>
 <ul>
