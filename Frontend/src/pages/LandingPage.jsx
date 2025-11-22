@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoLogoGithub } from "react-icons/io5";
 import lpImg from "../assets/forLandinPage.png";
 
@@ -45,12 +45,14 @@ const LandingPage = () => {
             >
               Get Started
             </button>
-            <button
+            <Link
               className="px-3 py-2 bg-blue-600 rounded-full outline-none border-0 text-black font-semibold hover:shadow-md hover:shadow-blue-800 active:bg-gray-500 transition-all duration-300 text-md cursor-pointer"
-              onClick={(e) => navigate("/signup")}
+              to={"https://github.com/thrivingSec/AI_Virtual_Assistant"}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Github <IoLogoGithub className="inline-block mb-1 size-4" />
-            </button>
+            </Link>
           </div>
         </div>
 

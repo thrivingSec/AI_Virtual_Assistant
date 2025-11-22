@@ -64,7 +64,10 @@ const Signup = () => {
       >
         <h1 className="text-white text-2xl font-semibold mb-5">
           Register to{" "}
-          <span className="text-blue-600 font-bold animate-pulse">
+          <span
+            className="text-blue-600 font-bold animate-pulse cursor-pointer"
+            onClick={(e) => navigate("/")}
+          >
             Virtual Assistant
           </span>
         </h1>
