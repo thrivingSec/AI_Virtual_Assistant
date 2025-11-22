@@ -13,7 +13,7 @@ const app = express();
 
 // cors config
 app.use(cors({
-  origin:"https://ai-virtual-assistant-t36d.onrender.com",
+  origin:"aivirtualassistant-bx6ct4w9u-thrivingsecs-projects.vercel.app",
   credentials:true
 }))
 
