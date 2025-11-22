@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import { Provider } from "react-redux";
 import store from "./redux/store.js";
 
-export const serverURL = "http://localhost:3000";
+export const serverURL = "https://ai-virtual-assistant-backend-juay.onrender.com";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
